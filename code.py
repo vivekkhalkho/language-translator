@@ -17,9 +17,9 @@ if uploaded_file is not None:
   
   df.loc[:,'item_name_eng'] = df['item_name'].apply(change_to_english)
   
-  st.write(result)
+  st.write(df)
 
-  csv = result.to_csv(index=False)
+  csv = df.to_csv(index=False)
   b64 = base64.b64encode(csv.encode()).decode()
 
 
