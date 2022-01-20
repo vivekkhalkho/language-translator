@@ -26,6 +26,6 @@ if uploaded_file is not None:
 
 
   st.markdown('### **⬇️ Download output CSV File **')
-  href = f'<a href="data:file/csv;base64,{b64}" download="myfilename.csv">Download csv file</a>'
+  href = f'<a href="data:file/csv;base64,{b64}" download="{uploaded_file.name}.csv">Download csv file</a>'
   st.markdown(href, unsafe_allow_html=True)
   
